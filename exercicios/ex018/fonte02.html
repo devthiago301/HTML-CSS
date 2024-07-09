@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fontes Externas</title>
+  <style>
+    @font-face {
+      font-family: 'favorito';
+      src: url('fonts/Neucha-Regular.ttf') format('truetype');
+    }
+    @font-face {
+      /*
+        Tipos de format()
+          - opentype(otf)
+          - truetype(ttf)
+          - embedded-opentype
+          - truetype-aat (Aple Advanced Typography)
+      */
+      font-family: 'love';
+      src: url('fonts/Beauty.otf') format('opentype'), url('fonts/BeautyRegular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+
+    }
+    body{
+      background-color: rgb(242, 243, 187);
+      font-family: 'love', Arial, Helvetica, sans-serif;
+      font-size: 3em;
+      font-weight: normal;
+    }
+    h1{
+      font-family: 'love', Times, serif;
+      font-size: 3em;
+      font-weight: normal;
+    }
+    h2{
+      font-family: 'favorito', Times, serif;
+      font-weight: normal;
+    }
+
+    p.arabe{
+     font-family: 'favorito', Times, serif;
+     font-weight: normal;
+     font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Fontes</h1>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat laboriosam beatae quis eius tenetur velit impedit, iusto eaque esse illo neque, dolorem adipisci provident, praesentium perferendis delectus eligendi eveniet laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nam aspernatur ea. Hic incidunt architecto optio numquam ex ea molestiae iure dicta similique vero ipsa provident quaerat, voluptatibus molestias eum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia deserunt doloribus exercitationem perspiciatis aliquam, quasi iste, qui perferendis temporibus incidunt, quia velit impedit cum error dolorum illum cumque distinctio aliquid.</p>
+  <h1>Estou criando minha Font-Face</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, dolor eveniet, quidem voluptate nobis doloribus ullam dolorum accusamus optio hic illum amet distinctio officia inventore accusantium labore quo quae ad?</p>
+  <h2>fontes</h2>
+  <p class="arabe">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam sit alias dignissimos, rem, consequatur deleniti dolorum nesciunt ratione non architecto in nobis molestiae soluta animi atque? Temporibus, eum. Ut, nostrum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet facere voluptate quis officiis, debitis quidem inventore laboriosam natus assumenda suscipit? Atque architecto vero tenetur unde officia iste eos, quisquam vitae!</p>
+</body>
+</html>

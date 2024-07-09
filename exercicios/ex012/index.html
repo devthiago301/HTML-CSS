@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audios</title>
+</head>
+<body>
+  <h1>Colocando Áudios no meu site</h1>
+  <p>Vamos aprender a reproduzir áudios em HTML5 com a tag audio</p>
+  <audio src="112- VOYAGE VOYAGE.mp3" controls autoplay></audio>
+  <br>
+  <audio preload="none" loop controls autoplay>
+    <source src="112- VOYAGE VOYAGE.mp3" type="audio/mpeg">
+    <source src="112- VOYAGE VOYAGE.ogg" type="audio/ogg">
+    <source src="112- VOYAGE VOYAGE.wav" type="audio/wav">
+    <p>Infelizmente Seu navegador não consegue reproduzir áudio <a href="112- VOYAGE VOYAGE.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+  </audio>
+  <br>
+  <h1>Inserindo vídeos hospedados localmente</h1>
+  <p>este vídeo hospedado no meu próprio servidor</p>
+  <video controls width="500" poster="imagens/skate2.png">
+    <source src="midia/videofull.mp4" type="video/mp4">
+    <source src="midia/videofull.m4v" type="video/mp4">
+    <source src="midia/Video720.mkv" type="video/matroska">
+    <source src="midia/Video720.webm," type="video/webm">
+    <source src="midia/videofull.ogv" type="video/ogg">
+    <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+
+  </video>
+  <br>
+  <video controls width="500" poster="imagens/skate2.png">
+    <source src="midia/Video720.mkv" type="video/mp4">
+    <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+
+  </video>
+
+  <h1>Inserindo vídeos do YouTube</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=CcbHo_jMgB8APUd5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <h1>Inserindo vídeo do vimeo</h1>
+
+  <div style="padding:66.67% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/2854365?h=3cbca7dc07&autoplay=1&color=ff9933" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+</body>
+</html>

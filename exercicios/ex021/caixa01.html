@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo de Caixas</title>
+  <style>
+    a:hover{
+      color: blue;
+      font-weight: bold;
+      background-color: rgb(241, 241, 152);
+    }
+      
+    h1{
+      
+      background-color: lightgray;
+      height: 300px;
+      width: 300px;
+      /*
+        Shorthand para border-width, border-style e border-color
+        border: 10px solid darkgreen;
+      */
+      border-width: 10px 40px 20px 25px;
+      border-radius: 15px;
+      border-style: solid;
+      border-color: darkgreen;
+      /*
+      shorthand para padding
+      padding: 20px 5px 20px 5px;
+      */
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      
+      /*
+      shorthand para margin
+      margin: 40px 40px 40px 40px
+      
+      Obs: quando é tudo igual você coloca um valor
+
+      ex: margin: 40px;
+
+      */
+      margin-top: 0px;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      margin-left: 0px;
+
+      outline-width: 2px;
+      outline-style: solid;
+      outline-color: blue;
+      
+    }
+
+    a{
+      display: block;
+      border-width: 2px;
+      border-style: solid;
+      border-color: blue;
+      margin: 2px;
+      padding-top: 5px;
+      padding-right: 5px;
+      padding-bottom: 5px;
+      padding-left: 5px;
+      width: 300px;
+       
+      
+    
+    }
+   
+  </style>
+</head>
+<body>
+  <h1><abbr title="Esse é um titulo de nivel 1">Exemplo de caixa box-level</abbr></h1>
+  <p style="color: aqua;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam libero dolorum minus ut repellendus, tenetur quasi consequuntur nostrum eaque pariatur praesentium mollitia numquam error perferendis porro veniam non magni modi?</p>
+  <p title="Esse é um titulo">Parágrafos também são exemplos de box-level, mas os <a href="https://google.com" target="_blank" rel="external">Links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum libero, vel laudantium perspiciatis voluptatem, delectus facere ducimus iure ex laborum ipsam nisi quasi officia aperiam ab earum quae quos! Nobis?</p>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo-elementos</title>
+  <style>
+    /*
+      # = id
+      . = class
+      : = pseudo-class
+      :: = pseudo-elemento
+      > = clildren 
+    */
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    a {
+      color: rgb(0, 4, 255);
+      text-decoration: none;
+      font-weight: bolder;
+    }
+
+    a:visited{
+      color: rgb(7, 223, 17);
+    }
+
+    a:hover{
+      color: black;
+      text-decoration: underline;
+    }
+
+    a:active{
+      color: rgb(207, 7, 207);
+      
+    }
+    
+    .principal{
+      background-color: rgb(241, 150, 150);
+      color: rgb(250, 16, 16);
+    }
+    .principal::before{
+      content: '✽ ';
+    }
+    .principal::after{
+      content: ' ✽';
+    }
+
+    a::after{
+      content: ' [link]';
+      text-decoration: none;
+      font-weight: normal;
+      color: black;
+    }
+
+    h1{
+      border-width: 2px;
+      border-style: solid;
+      border-color: blueviolet;
+      width: 500px;
+      padding: 10px;
+      margin: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Personalizando Links</h1>
+  <ul>
+    <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Repositório GitHub</a></li>
+    <li><a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external" class="principal">Canal no YouTube</a></li>
+    <li><a href="https://www.cursoemvideo.com" target="_blank" rel="external">Site do Curso em Video</a></li>
+  </ul>
+</body>
+</html>
