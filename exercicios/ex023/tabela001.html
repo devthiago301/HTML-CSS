@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table, td{
+            border: 1px solid black;
+            height: 100px;
+            width: 500px;
+            text-align: center;
+        }
+        th{
+            border: 1px solid black;
+            background-color: aqua;
+            height: 5px;
+            
+        }
+
+        td.diagonal{
+            background-color: yellow;
+        }
+
+        td{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <table>
+        <tr>
+            <th>NOME</th>
+            <th>IDADE</th>
+            <th>SALARIO</th>
+        </tr>
+        <tr>
+            <td  class="diagonal">MARCOS</td>
+            <td>25</td>
+            <td>R$3.500,00</td>
+        </tr>
+        <tr>
+            <td>ROGÉRIO</td>
+            <td  class="diagonal">35</td>
+            <td>R$7.500,00</td>
+        </tr>
+        <tr>
+            <td>MARCELO</td>
+            <td>25</td>
+            <td class="diagonal">R$5.000,00</td>
+        </tr>
+    </table>
+</body>
+</html>
